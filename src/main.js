@@ -8,9 +8,16 @@ import store from './store'
 import Element from 'element-ui'
 
 import 'element-ui/lib/theme-default/index.css'
+import 'font-awesome/css/font-awesome.min.css'
+
+import Layout from './components/Layout'
+import ClientEdit from './components/ClientEdit'
 
 Vue.use(Element)
 Vue.use(VueResource)
+
+Vue.component(Layout.name, Layout)
+Vue.component(ClientEdit.name, ClientEdit)
 
 const router = new VueRouter({
   routes,

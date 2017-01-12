@@ -1,6 +1,8 @@
 import Home from './index'
 
 module.exports = {
-  path: '/Index',
+  name: '首页',
+  path: '/',
+  hidden: true,
   component: Home
 }

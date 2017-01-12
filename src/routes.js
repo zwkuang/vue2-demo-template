@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import IndexRoutes from './views/Index/routes'
-
-import WebIndex from './views/Index/index.vue'
+import LoginRoutes from './views/Login/routes'
+import ClientRoutes from './views/Client/routes'
 
 Vue.use(VueRouter)
 
-const routes = [
-  { path: '/', component: WebIndex }
-]
+const routes = []
 
 routes.push(IndexRoutes)
+routes.push(LoginRoutes)
+routes.push(ClientRoutes)
 
 export default routes
